@@ -1,0 +1,57 @@
+.page {
+  min-height: 100vh;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  color: rgb(247, 0, 255);
+  overflow: hidden; /* HIDDES THE SHARP CORNERS OF THE IMAGE */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.712);
+}
+
+/* __________IMAGE__________ */
+
+.card-image {
+  flex-basis: 50%;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  background-color: rgb(6, 33, 41);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.card-content label,
+.card-content-label {
+  text-transform: uppercase;
+  color: greenyellow;
+}
+
+.card-content-cta {
+  align-self: flex-end;
+  background-color: blue;
+  color: white;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.card-content-cta:hover {
+  cursor: pointer;
+}
